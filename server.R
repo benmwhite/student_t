@@ -8,7 +8,7 @@ shinyServer(function(input, output) {
           ylim = c(0, 0.5), 
           main = paste("Student's t Distribution, df =", 
                        as.character(input$deg_f)),
-          xlab = "t", ylab = "f(t)") + 
+          xlab = "t (blue density is standard normal)", ylab = "f(t)") + 
       theme_minimal() + stat_function(fun = dnorm, color = "blue")
   })
 })
